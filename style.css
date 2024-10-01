@@ -194,12 +194,15 @@ h1, h3{
         font-size: 12px;
     }
         .brand-h{
-        margin-left: 80px;
+        margin-left: 100px;
         margin-top: 60px;
         margin-bottom: 60px;
     }
     .brand{
         font-size: 35px;
+    }
+    .search{
+        width: 90%;
     }
 }
 
