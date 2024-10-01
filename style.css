@@ -14,7 +14,6 @@ h1, h3{
 
 .brand{
     font-size: 80px;
-    color: darkorange;
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -194,6 +193,14 @@ h1, h3{
     html{
         font-size: 12px;
     }
+        .brand-h{
+        margin-left: 80px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .brand{
+        font-size: 35px;
+    }
 }
 
 @media screen and (max-width: 300px){
@@ -201,7 +208,7 @@ h1, h3{
         min-height: 10em;
     }
     .brand{
-        font-size: 28px;
+        font-size: 30px;
     }
 
 }
