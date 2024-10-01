@@ -1,9 +1,12 @@
 const search = async()=>{
     let weatherupdate = city_name.value
     console.log(weatherupdate);
+
     if(weatherupdate){
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${weatherupdate}&appid=1c3c074f848dabe12d6fe739e4928cf4`)
-         response.json().then((data)=>{console.log(data);
+         response.json().then((data)=>{ 
+            
+            console.log(data);
         
              let cname = data.name
              console.log(cname);
@@ -44,6 +47,8 @@ const search = async()=>{
             console.log(date);
 
 
+
+
             result.innerHTML = `<div class="weather-app">
             <div class="container">
                 <h3 class="brand ms-5 mt-5 fs-1">Weather Update</h3>
@@ -64,7 +69,7 @@ const search = async()=>{
             <div class="panel">
                 <form id="locationInput">
                     <input id="city-name" type="text" class="search" placeholder="Search Location...">
-                    <button onclick="search()" type="submit" class="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button onclick="search()" type="submit" class="submit" value="check"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <ul class="details">
                     <h4>Weather Details</h4>
@@ -88,10 +93,6 @@ const search = async()=>{
                     <li>
                         <span>Pressure</span>
                         <span class="pressure">${cpressure}mbar</span>
-                    </li>
-                    <li>
-                        <span>Time Zone</span>
-                        <span class="time">${date}</span>
                     </li>
                     <li>
                         <span>Feels like</span>
